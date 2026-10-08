@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuento: El mundo se rompió</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Librería PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <!-- Librería PageFlip -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <h1>El mundo se rompió</h1>
+        
+        <!-- Panel de Controles -->
+        <div class="controls-container">
+            <button id="btn-prev" class="btn" aria-label="Página anterior">◀ Anterior</button>
+            <button id="btn-next" class="btn" aria-label="Página siguiente">Siguiente ▶</button>
+
+            <span class="separator">|</span>
+
+            <button id="btn-tts" class="btn btn-accessibility" aria-label="Lectura en voz alta">🔊 Leer en Voz Alta</button>
+            <button id="btn-zoom-in" class="btn btn-accessibility" aria-label="Agrandar vista">A+</button>
+            <button id="btn-zoom-out" class="btn btn-accessibility" aria-label="Achicar vista">A-</button>
+        </div>
+
+        <div id="page-info" class="page-info">Página 0 de 0</div>
+        <div id="loading">Cargando cuento...</div>
+    </header>
+
+    <main class="book-container">
+        <div id="flip-book" class="flip-book"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
